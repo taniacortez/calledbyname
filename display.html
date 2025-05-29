@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display</title>
+  <link rel="stylesheet" href="display.css">
+</head>
+<body>
+  <video id="video" autoplay muted loop playsinline>
+    <source src="videosdoorsloop.mp4" type="video/mp4">
+  </video>
+
+  <div id="floatingScreen" style="display: none;">
+    <div class="name-container" id="nameContainer"></div>
+    <div class="quote-protect">
+      <div class="quote" id="quote">“I have called you by name”</div>
+      <div id="submittedName" class="submitted-name"></div>
+      <div class="verse" id="fullQuote">“and bestow on you a title of honor,  
+      though you do not acknowledge me.”  
+      <br><strong>Isaiah 45:7</strong></div>
+    </div>
+    
+  </div>
+
+  <script src="display.js"></script>
+</body>
+</html>

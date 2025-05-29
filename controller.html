@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Knock UI</title>
+  <link rel="stylesheet" href="controller.css">
+
+</head>
+<body>
+  <div class="verse">
+    “Ask, and it will be given to you; seek, and you will find;<br>
+    <strong>knock, and it will be opened to you.</strong><br>
+    For everyone who asks receives, and the one who seeks finds,<br>
+    and to the one who <strong>knocks it will be opened.”</strong>
+  </div>
+
+  <div class="circle-container">
+    <div class="circle-wrapper" id="circleWrapper">
+      <div class="circle" id="knockCircle"></div>
+    </div>
+    <div class="svg-ring">
+      <svg viewBox="0 0 200 200">
+        <defs>
+          <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+        </defs>
+        <text font-size="12" fill="white">
+          <textPath xlink:href="#circlePath" startOffset="0%">
+            KNOCK KNOCK KNOCK KNOCK KNOCK KNOCK KNOCK KNOCK KNOCK KNOCK
+          </textPath>
+        </text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="ref">Matthew 7:7–8</div>
+
+  <div id="typeScreen" class="hidden">
+    <div class="input-wrapper">
+      <p class="label">Type Name</p>
+      <form id="nameForm">
+        <input type="text" id="nameInput" autocomplete="off" />
+        <button type="submit">submit</button>
+      </form>
+    </div>
+  </div>
+
+<script src="controller.js"></script>
+</body>
+</html>
